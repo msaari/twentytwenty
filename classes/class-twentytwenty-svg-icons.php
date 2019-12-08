@@ -161,7 +161,7 @@ if ( ! class_exists( 'TwentyTwenty_SVG_Icons' ) ) {
 			'pocket'    => array(
 				'getpocket.com',
 			),
-			'telegram'    => array(
+			'telegram'  => array(
 				'telegram.org',
 				'telegram.me',
 				't.me',
