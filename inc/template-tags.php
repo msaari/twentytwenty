@@ -327,9 +327,10 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 				 *
 				 * @since 1.0.0
 				 *
-				 * @param int   $post_ID Post ID.
+				 * @param int   $post_ID   Post ID.
+				 * @param array $post_meta Post meta visibility settin.
 				 */
-				do_action( 'twentytwenty_start_of_post_meta_list', $post_id );
+				do_action( 'twentytwenty_start_of_post_meta_list', $post_id, $post_meta );
 
 				// Author.
 				if ( in_array( 'author', $post_meta, true ) ) {
@@ -450,9 +451,10 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 				 *
 				 * @since 1.0.0
 				 *
-				 * @param int   $post_ID Post ID.
+				 * @param int   $post_ID   Post ID.
+				 * @param array $post_meta Post meta visibility settin.
 				 */
-				do_action( 'twentytwenty_end_of_post_meta_list', $post_id );
+				do_action( 'twentytwenty_end_of_post_meta_list', $post_id, $post_meta );
 
 				?>
 
